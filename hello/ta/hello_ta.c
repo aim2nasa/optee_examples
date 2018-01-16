@@ -58,7 +58,7 @@ TEE_Result TA_InvokeCommandEntryPoint(void __maybe_unused *sess_ctx,
 
 	switch (cmd_id) {
 	case TA_HELLO_CMD:
-		MSG("Hello CMD\n");
+		IMSG("Hello CMD\n");
 		return TEE_SUCCESS;
 	default:
 		return TEE_ERROR_BAD_PARAMETERS;
